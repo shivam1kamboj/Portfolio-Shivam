@@ -109,3 +109,13 @@ footer .icon {
         font-size: 14px;
     }
 }
+
+.highlighted-description {
+    background-color: #333333; /* Dark gray background */
+    color: #ffffff; /* White text for contrast */
+    border-left: 5px solid #00BFFF; /* Solid left border for emphasis */
+    padding: 15px; /* Padding around the text */
+    margin: 20px 0; /* Top and bottom margin */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+}
+
