@@ -12,28 +12,80 @@
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
+            <li><a href="#Headline">Current Research</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#Awards"> Awards</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="about">
+        <img src="SK_at_SJSU.jpeg" width="300" height="400" />
         <h2>About Me</h2>
         <p>As a dedicated PhD Physics scholar at the University of 
 California, Merced, my focus is on Quantum Computing and Computational 
 Physics. I have a strong background in Physics with a Master's degree from 
 San Jose State University and Chandigarh University.</p>
     </section>
-    <section id="research">
-        <h2>Research</h2>
-        <p>Currently engaged in groundbreaking research on Frequency 
-Modulated Quantum Rabi Array. I have a keen interest in the dynamics of 
-spins, quantum computing, and numerical simulation techniques.</p>
+    <section id="Headline">
+        <h2>Current Research</h2>
+        <h3><i>Working with Prof. Lin Tian in Quantum computing. Researching on "Quantum Rabi Array" for advancement
+            in quantum computing hardware, and to mitigate errors thereby solving decoherence problem.</i></h3>
+    <h2>Quantum Rabi Array Simulation Interface</h2>
+    <h3>Project Overview:</h3>
+    <p>
+        Developed an interactive web interface for the simulation and analysis of a two-site Quantum Rabi Array (QRA), a cornerstone in my PhD research in Quantum Computing. This comprehensive tool facilitates the exploration of quantum cavity interactions and photon exchange dynamics, crucial for advancing quantum computational models.
+    </p>
+
+    <h3>Technologies Used:</h3>
+    <ul>
+        <li><strong>Backend:</strong> Python
+            <ul>
+                <li>Implemented numerical calculations using Numpy library's linear algebra to model quantum behaviors with high precision.</li>
+                <li>Employed Flask as a server-side framework to handle HTTP requests and serve computational results to the frontend.</li>
+            </ul>
+        </li>
+        <li><strong>Frontend:</strong>
+            <ul>
+                <li>Crafted a responsive and intuitive user interface with HTML5 and CSS3, ensuring a seamless user experience across various devices and screen sizes.</li>
+                <li>Utilized JavaScript to create dynamic visualizations of quantum states, enabling real-time interaction with the quantum models.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Features:</h3>
+    <ul>
+        <li>Interactive Visualization: Real-time graphical representation of QRA dynamics, allowing users to visualize and intuitively understand complex quantum phenomena.</li>
+        <li>Custom Simulation Configuration: Users can modify key parameters of the QRA model to investigate different quantum behaviors and cavity interaction regimes.</li>
+        <li>On-the-fly Calculations: Backend Python algorithms perform calculations in response to user input, demonstrating the array's reactions to variable conditions instantly.</li>
+        <li>Educational Tool: Serves as a pedagogical platform for students and researchers new to Quantum Computing, providing a hands-on approach to quantum theory fundamentals.</li>
+    </ul>
+
+    <h3>Outcome:</h3>
+    <p>
+        The 'Quantum Rabi Array Simulation Interface' stands as a testament to the synergy between advanced quantum physics research and cutting-edge web technologies, presenting a novel approach to quantum computing simulations.
+    </p>
     </section>
 
 <section id="projects">
-    <h2>Projects and Research</h2>
+    <h2>All Projects and Research</h2>
+
+    <div class="project">
+        <h3>Frequency-Modulated Quantum Rabi Array</h3>
+<ul>
+    <li>Investigated the Quantum Rabi model array, focusing on dynamics,
+entanglement properties, and energy spectra using Hamiltonian
+formulation.</li>
+    <li>Applied adiabatic time evolution for controlled transitions in
+quantum systems, ensuring maintenance of ground state, pivotal for quantum
+operations and simulations.</li>
+    <li>This project's insights are instrumental for understanding and
+manipulating quantum systems, particularly in the context of quantum
+computing.</li>
+</ul>
+
+
+    </div>
 
     <div class="project">
         <h3>Quantum Ising Model</h3>
@@ -52,25 +104,10 @@ edge states.</p>
     <div class="project">
         <h3>Efficient Diagonalization of Sparse Hamiltonian Matrix</h3>
         <p>Developed a faster algorithm for exact diagonalization of 
-Hamiltonian matrices in 2D STO arrays, enhancing computational efficiency 
-in quantum computing simulations.</p>
-    </div>
-
-    <div class="project">
-        <h3>Frequency-Modulated Quantum Rabi Array</h3>
-<ul>
-    <li>Investigated the Quantum Rabi model array, focusing on dynamics, 
-entanglement properties, and energy spectra using Hamiltonian 
-formulation.</li>
-    <li>Applied adiabatic time evolution for controlled transitions in 
-quantum systems, ensuring maintenance of ground state, pivotal for quantum 
-operations and simulations.</li>
-    <li>This project's insights are instrumental for understanding and 
-manipulating quantum systems, particularly in the context of quantum 
-computing.</li>
-</ul>
-
-
+            Hamiltonian matrices in 2D STO arrays, enhancing computational efficiency
+            in quantum computing simulations. This <a href="https://github.com/shivam1kamboj/2D_STO_Model/blob/master/spectrum_using_fast_diagonalization/Fast_algorithm.py"> algorithm </a> takes 66 seconds to diagonalize
+            a (250000 x 250000) sparse matrix as compared to inbuilt Numpy
+            routine which takes more than 3500 seconds.  </p>
     </div>
 
     <div class="project">
@@ -82,14 +119,37 @@ contributing to the field of condensed matter physics.</p>
 
 </section>
 
+      <section id="Awards">
+        <h2>Outreach and Awards:</h2>
+    <ul class="no-bullets">
+        <li><strong>Member of Graduate Dean Advisory Council on Diversity (GDACD)</strong>, UC Merced <span class="date-right">2023</span></li>
+        <li><strong>Real World Quantum Computing Workshop</strong>, Lawrence Livermore National Lab <span class="date-right">2023</span></li>
+        <li><strong>Advanced Quantum Testbed (AQT) Summit</strong>, Lawrence Berkeley National Lab <span class="date-right">2023</span></li>
+        <li><strong>Recipient of Outstanding Teaching Assistant Award</strong>, San Jose State University, San Jose, CA <span class="date-right">2022</span></li>
+        <li><strong>Mentor: Learning Assistant - Reflection, Guidance and Exploration (LA-RGE)</strong> <span class="date-right">2022</span></li>
+        <li><strong>SJSU Grad Slam 2022</strong>, Three-Minute Research Talk <span class="date-right">2022</span></li>
+        <li><strong>APS March 2022 Meeting</strong>, Scientific Poster Presentation <span class="date-right">2022</span></li>
+        <li><strong>IBM Quantum Challenge</strong>, Online Challenge Exam <span class="date-right">2020</span></li>
+        <li><strong>First Position in "Tech-Invent" Competition</strong>, Presentation of Particle Detector (Silicon-Detector) <span class="date-right">2017</span></li>
+    </ul>
+
+        <ul>
+            <li>I won Outstanding Teaching Assistant Award with a prize money worth $1000 awarded by
+                Department of Physics and Astronomy, San Jose State University, CA, U.S.A.  Please see
+                news 2022 on University webpage for detailed description of the award if you are interested to know.</li>
+            <li> Watch my recent 3-minute presentation <a href="https://www.youtube.com/watch?v=95OwREIrIw8" target="_blank">video</a>  in semi-final of SJSU Grad Slam on the future potential benefits of my Master's research project.
+            </li>
+        </ul>
+    </section>
+
 
     <section id="publications">
         <h2>Publications</h2>
         <p>My work has led to publications like "Oscillatory Edge Modes in 
 Two Dimensional Spin-Torque Oscillator Arrays", currently under peer 
-review.</p>
+review.<a href="https://arxiv.org/abs/2307.13876">arXiv:2307.13876</a></p>
     </section>
-    <footer>
+    <footer id="contact">
         <p>Contact me at: <a 
 href="mailto:shivam1kamboj@gmail.com">shivam1kamboj@gmail.com</a> | 
 Connect on <a 

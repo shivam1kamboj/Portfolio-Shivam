@@ -45,3 +45,67 @@ section {
     margin: 20px 0;
 }
 
+.date-right {
+    float: right;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+/* Styling for the entire website with a darker background */
+body {
+    background: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    padding: 20px;
+    margin: 0 auto; /* Center the content if needed */
+    max-width: 1200px; /* Optional: to prevent the site from stretching too wide on large screens */
+    font-family: Arial, sans-serif; /* Your preferred font */
+    line-height: 1.6;
+    color: #f4f4f4; /* Light text color for better contrast against the dark background */
+}
+
+/* Styling for sections with white translucent background */
+section {
+    background: rgba(255, 255, 255, 0.9); /* Translucent white background for sections */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px 0; /* Margin around each section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+    color: #222; /* Text color */
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 0, 0, 0.7); /* Dark background for the footer */
+    color: #ffffff; /* Light color for text for better readability */
+    padding: 20px;
+    text-align: center; /* Center-align the footer content */
+}
+
+/* Style for links in the footer */
+footer a {
+    color: #00BFFF; /* Light blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Margin around links */
+}
+
+/* Hover effect for links */
+footer a:hover {
+    color: #ffffff; /* Change color when hovering */
+    text-decoration: underline; /* Add underline on hover for interactivity */
+}
+
+/* Optional: Style for social media icons or other elements */
+footer .icon {
+    margin: 0 5px;
+    /* Add additional styles for icons */
+}
+
+/* Responsive footer text for smaller screens */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
