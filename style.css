@@ -1,11 +1,20 @@
+/* =========================================
+   General Body & Layout Styling
+========================================= */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    color: #f4f4f4; /* Light text color for better contrast */
+    max-width: 1200px; /* Prevents stretching too wide on large screens */
 }
 
+/* =========================================
+   Header & Navigation
+========================================= */
 header {
     background: #333;
     color: #fff;
@@ -40,9 +49,16 @@ nav ul li a:hover {
     background-color: #444;
 }
 
+/* =========================================
+   Sections & Content
+========================================= */
 section {
+    background: rgba(255, 255, 255, 0.9); /* Translucent white background */
+    border-radius: 10px; /* Rounded corners */
     padding: 20px;
     margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #222; /* Dark text color for readability */
 }
 
 .date-right {
@@ -54,68 +70,81 @@ section {
     padding-left: 1em;
 }
 
-/* Styling for the entire website with a darker background */
-body {
-    background: rgba(0, 0, 0, 0.8); /* Dark translucent background */
-    backdrop-filter: blur(10px); /* Blur effect for the glass look */
-    padding: 20px;
-    margin: 0 auto; /* Center the content if needed */
-    max-width: 1200px; /* Optional: to prevent the site from stretching too wide on large screens */
-    font-family: Arial, sans-serif; /* Your preferred font */
-    line-height: 1.6;
-    color: #f4f4f4; /* Light text color for better contrast against the dark background */
+.highlighted-description {
+    background-color: #333333; /* Dark gray background */
+    color: #ffffff; /* White text for contrast */
+    border-left: 5px solid #00BFFF; /* Solid left border for emphasis */
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Styling for sections with white translucent background */
-section {
-    background: rgba(255, 255, 255, 0.9); /* Translucent white background for sections */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-    margin: 20px 0; /* Margin around each section */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
-    color: #222; /* Text color */
+/* =========================================
+   About Me - Image Gallery (Fixed Row Height)
+========================================= */
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; 
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-/* Footer styling */
+.about-images img {
+    width: 32%; /* Ensures all three fit equally in the row */
+    height: 400px; /* The FIXED height for the entire row */
+    object-fit: cover; /* Crops the image to fit the box perfectly without stretching */
+    border-radius: 8px; /* Smooth corners */
+}
+
+/* Adjusts the focal point of the tall image so the head isn't cropped out */
+.about-images img.tall-img {
+    object-position: top center; 
+}
+
+/* Adjusts the focal point of the landscape image if it crops too much off the sides */
+.about-images img.landscape-img {
+    object-position: center center; 
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 768px) {
+    .about-images {
+        flex-direction: column;
+    }
+    .about-images img {
+        width: 100%;
+        height: auto; /* Reverts to natural height on phones to prevent bad cropping */
+    }
+}
+
+/* =========================================
+   Footer
+========================================= */
 footer {
-    background: rgba(0, 0, 0, 0.7); /* Dark background for the footer */
-    color: #ffffff; /* Light color for text for better readability */
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff; 
     padding: 20px;
-    text-align: center; /* Center-align the footer content */
+    text-align: center; 
 }
 
-/* Style for links in the footer */
 footer a {
-    color: #00BFFF; /* Light blue color for links */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 10px; /* Margin around links */
+    color: #00BFFF; 
+    text-decoration: none; 
+    margin: 0 10px; 
 }
 
-/* Hover effect for links */
 footer a:hover {
-    color: #ffffff; /* Change color when hovering */
-    text-decoration: underline; /* Add underline on hover for interactivity */
+    color: #ffffff; 
+    text-decoration: underline; 
 }
 
-/* Optional: Style for social media icons or other elements */
 footer .icon {
     margin: 0 5px;
-    /* Add additional styles for icons */
 }
 
-/* Responsive footer text for smaller screens */
 @media screen and (max-width: 768px) {
     footer {
         font-size: 14px;
     }
 }
-
-.highlighted-description {
-    background-color: #333333; /* Dark gray background */
-    color: #ffffff; /* White text for contrast */
-    border-left: 5px solid #00BFFF; /* Solid left border for emphasis */
-    padding: 15px; /* Padding around the text */
-    margin: 20px 0; /* Top and bottom margin */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
-}
-
