@@ -27,25 +27,34 @@
         <img src="Pictures/Gemini_Generated_schematic.png" alt="Quantum Rabi Dimer Schematic" class="schematic-img" />
     </div>
         <h2>About Me</h2>
-        <p>I am a PhD Candidate in Quantum Computing and Computational Physics at the University of California, Merced. My expertise lies at 
-            the intersection of theoretical physics, high-performance computing, and data analysis.</p>
-        <p><p><p>With a background spanning academic research and national laboratory environments (LLNL), I specialize in modeling complex quantum 
-            systems and optimizing computational algorithms. I do not just analyze data; I build the tools to understand it. Whether modeling the 
-            Hamiltonian dynamics of strongly coupled spin-cavity arrays, writing custom numerical integrators to simulate the noisy dynamics of quantum 
-            systems, or optimizing exact diagonalization algorithms by 98%, I thrive on solving difficult technical challenges. I have a proven track 
-            record of successfully navigating diverse projects, from theoretical quantum modeling to physics education software, consistently providing 
-            meaningful progress and results. I am currently seeking opportunities where I can apply my skills in quantitative analysis, simulation, 
-            and quantum technologies to drive innovation.</p></p></p>
+<p>I am a PhD Candidate in Quantum Computing and Computational Physics at the University of California, Merced. 
+I work at the intersection of theory, experiment, and large-scale computation, and increasingly across all three at once.</p>
+
+<p>My background spans theoretical research, national-laboratory hardware work (LLNL), and experimental quantum optics. 
+I started as a theorist: modeling the Hamiltonian dynamics of strongly coupled spin-cavity and cavity-cavity systems, 
+writing custom numerical integrators for the noisy dynamics of open quantum systems, and building sparse 
+exact-diagonalization pipelines that run at scale on HPC clusters. But I don't stop at the model. At Lawrence Livermore 
+National Lab I moved into pulse-level control and quantum process tomography on superconducting qudit hardware, writing 
+the control and analysis code that closes the loop between a simulated device and its measured behavior, including a 
+constrained Maximum-Likelihood pipeline that reconstructs physically valid (CPTP) process maps from noisy experimental data. 
+I am now beginning to realize the theory I developed experimentally myself, moving hands-on with superconducting hardware 
+to test predictions I first wrote down on paper.</p>
+
+<p>I do not just analyze data; I build the tools to understand it, and I build the systems that produce it. That arc, from 
+Hamiltonian to simulation to a working experiment, is what I care about most. I am seeking research and engineering 
+opportunities where I can apply this end-to-end fluency in quantum modeling, control, and hardware to make quantum 
+technology genuinely useful.</p>
     </section>
 
     <section id="skills">
         <h2>Technical Expertise</h2>
         <div class="skills-grid">
             <ul>
-                <li><strong>Programming & Scripting:</strong> Python (NumPy, SciPy, Pandas, Matplotlib), C++, JavaScript, HTML5/CSS3.</li>
-                <li><strong>Machine Learning & AI:</strong> TensorFlow, Keras, Neural Networks, Data Preprocessing.</li>
-                <li><strong>Scientific Computing:</strong> Exact Diagonalization, Hamiltonian Simulation, Pulse-level Control, Quantum Process Tomography.</li>
-                <li><strong>Tools & Frameworks:</strong> Flask, Git/GitHub, LaTeX, High-Performance Computing (HPC).</li>
+                <li><strong>Superconducting Qubit Control & Characterization:</strong> Pulse-level control, gate-sequence optimization, quantum process tomography (QPT), CPTP-constrained MLE reconstruction, T1/T2 and Ramsey characterization.</li>
+                <li><strong>Scientific Computing:</strong> Exact Diagonalization, Hamiltonian Simulation, open quantum systems, sparse linear algebra, High-Performance Computing (HPC / SLURM).</li>
+                <li><strong>Programming & Scripting:</strong> Python (NumPy, SciPy, Pandas, Matplotlib, Flask), Qiskit, QuTiP, familiarity with C++; JavaScript, HTML5/CSS3.</li>
+                <li><strong>Machine Learning & Numerics:</strong> TensorFlow, Keras, constrained optimization and inverse problems, model fitting and validation.</li>
+                <li><strong>Tools & Frameworks:</strong> Git/GitHub, Linux, Google Cloud (App Engine), LaTeX, pytest.</li>
             </ul>
         </div>
     </section>
@@ -53,12 +62,13 @@
     <section id="Headline">
         <div class="highlighted-description">
         <h2>Current Research</h2>
-        <p><p>As a doctoral student working with Prof. Lin Tian in the field of Quantum Computing, my research focuses on simulating arrays 
-            of strongly coupled spin-cavity systems to deeply understand their complex dynamics. By exploring the "Quantum Rabi Array," my 
-            aim is to revolutionize quantum computing hardware by advancing techniques to mitigate errors and address the critical challenge of 
-            decoherence. Our work not only contributes to the theoretical understanding of quantum systems but also paves the way for practical 
-            applications in next-generation quantum technologies, such as quantum simulation of molecule docking to study protein folding, developing 
-            strategies for high-frequency trading, and enhancing market prediction and trend analysis.</p></p>
+        <p>As a doctoral student working with Prof. Lin Tian in Quantum Computing, my research focuses on simulating arrays 
+            of strongly coupled spin-cavity systems to understand their complex dynamics. By exploring the "Quantum Rabi Array," 
+            I study the spectral structure, critical dynamics, and quantum phase transitions of strong light-matter coupling, 
+            with the goal of advancing techniques to mitigate errors and address the critical challenge of decoherence. These are 
+            the same theoretical structures that underlie superconducting transmon-resonator and bosonic-code hardware designs, 
+            so the work contributes both to the theoretical understanding of coupled quantum systems and to the practical design 
+            of next-generation quantum computing hardware.</p>
             </div>
     <h2>Quantum Rabi Array Simulation Interface</h2>
     <h3>Project Overview:</h3>
@@ -104,15 +114,16 @@
     
         <h4>Physics Graduate Intern (Quantum Computing) <span class="date-right">| Lawrence Livermore National Lab (LLNL) (May 2024 - Aug 2024)</span></h4>
         <ul>
-            <li><strong>Optimal Control:</strong> Developed pulse-level computing functions to significantly enhance quantum gate fidelities.</li>
-            <li><strong>Simulation & Analysis:</strong> Performed Ramsey fringe simulations and fit experimental data with continuous functions to validate quantum state manipulation.</li>
-            <li><strong>Process Tomography:</strong> Optimized gate parameters to improve qubit performance reliability.</li>
+            <li><strong>Pulse-Level Control:</strong> Developed pulse-level quantum control software in Python for superconducting qudit hardware; designed, benchmarked, and optimized gate sequences with fidelity improvements validated end-to-end via quantum process tomography.</li>
+            <li><strong>Process Tomography:</strong> Built a CPTP-constrained Maximum-Likelihood-Estimation pipeline that reconstructs physically valid process maps from noisy experimental tomography data, a constrained inverse problem central to automated device characterization.</li>
+            <li><strong>Device Characterization:</strong> Fit Ramsey fringes and T1/T2 decay against experimental measurements, closing the loop between simulated device models and measured hardware behavior. Ramped into the group's measurement stack as a theorist and was contributing production-quality control and analysis code within weeks.</li>
         </ul>
     
         <h4>Graduate Student Researcher <span class="date-right">| University of California, Merced (May 2023 - Present)</span></h4>
         <ul>
-            <li>Spearheading research on the Quantum Rabi Array under Prof. Lin Tian to characterize quantum state evolution and phase transitions in strong light-matter coupling regimes</li>
-            <li>Built a Python/Flask-based "Physics Concept Analyzer," a custom tool enabling students and researchers to model solutions for complex physics problems.</li>
+            <li>Lead investigator on the Quantum Rabi Array project under Prof. Lin Tian, characterizing quantum state evolution and phase transitions in strong light-matter coupling regimes via sparse exact diagonalization on HPC clusters; first-author manuscript in preparation.</li>
+            <li>Functioning at a postdoctoral capacity: independently driving the project and coordinating with the experimental Sharping Group on a shared cavity-QED platform, now moving into hands-on experimental work on superconducting hardware.</li>
+            <li>Designed, built, and deployed the "Physics Concept Analyzer Tool" (PCAT), a full-stack application now in active production use at UC Merced.</li>
         </ul>
     
         <h2>Teaching Leadership</h2>
@@ -121,7 +132,7 @@
         <h4>Teaching Assistant (Multiple Courses) <span class="date-right">| UC Merced & SJSU (2021 - Present)</span></h4>
         <ul>
             <li><strong>EdTech Integration:</strong> Piloted the "Physics Concept Analyzer Tool" (PCAT) to assist students in modeling solutions for discussion problems, improving engagement with complex material.</li>
-            <li><strong>Award Winning:</strong> Recipient of the Outstanding Teaching Assistant Award ($1,000) for pedagogical excellence.</li>
+            <li><strong>Award Winning:</strong> Two-time recipient of the Outstanding Teaching Assistant Award (UC Merced 2026, SJSU 2022) for pedagogical excellence.</li>
             <li><strong>Curriculum Development:</strong> Collaborated with faculty to design inquiry-based laboratory exercises for biological science students.</li>
             <li><strong>Mentorship:</strong> Mentored undergraduate students in the "Learning Assistant - Reflection, Guidance and Exploration" program.</li>
         </ul>
@@ -132,6 +143,7 @@
         <p>Shivam Kamboj, Rembert A. Duine, Benedetta Flebus, and Hilary M. Hurst "Oscillatory
             edge modes in two dimensional spin-torque oscillator arrays", Physical Review B (2024) <a href="https://link.aps.org/doi/10.1103/PhysRevB.109.094436"
 target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
+        <p>Shivam Kamboj and Lin Tian, "Critical Dynamics and Spectral Analysis of the Frequency-Modulated Quantum Rabi Dimer", manuscript in preparation, targeted submission 2026.</p>
         <p>Shivam Kamboj, and Hilary M. Hurst "Topology of a Driven 2D Spin Torque Oscillator Array" APS March Meeting 2022, [Chicago, Illinois],
             <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MART00249K" target="_blank"> Abstract ID: T00.249.</a></p>
          <p>Hilary M. Hurst, Rembert A. Duine, Benedetta Flebus, Shivam Kamboj "Exploring non-Hermitian topology with spin-torque oscillator arrays" APS March Meeting 2022, [Chicago, Illinois],
@@ -151,27 +163,25 @@ target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
         </div>
     
         <div class="project">
+            <h3>Physics Concept Analyzer Tool (PCAT)</h3>
+            <h4>Full-Stack, Deployed Application, in active production use at UC Merced</h4>
+            
+            <p><strong>The Mission:</strong> Designed, built, and deployed a customer-facing application end-to-end, taking it from specification to production and real end-user adoption, concrete evidence of translating research into deployable, maintained software.</p>
+            
+            <ul>
+                <li><strong>Architecture:</strong> Built end-to-end on Flask + Google App Engine, with a structured LLM pipeline integrating Google Gemini and multimodal input (text, voice, PDF/figure attachments).</li>
+                <li><strong>Functionality:</strong> Scaffolds the cognitive steps of setting up a physics problem (concept identification, modeling steps, common pitfalls, self-assessment) before calculation, shifting students from rote equation-hunting to building robust physical models.</li>
+                <li><strong>Tech Stack:</strong> Python, Flask, Google Gemini API, Google Cloud (App Engine), JavaScript.</li>
+            </ul>
+        </div>
+
+        <div class="project">
             <h3>Quantum Rabi Array Simulation Interface (Full Stack Web App)</h3>
             <ul>
                 <li><strong>Overview:</strong> A comprehensive interactive web tool for analyzing photon exchange dynamics in quantum cavities.</li>
                 <li><strong>Tech Stack:</strong> Python (Backend computation), Flask (API), JavaScript (Frontend Visualization).</li>
                 <li><strong>Features:</strong> Enables real-time, on-the-fly calculation of quantum states based on user-manipulated parameters.</li>
             </ul>
-        </div>
-
-        <div class="project">
-            <h3>Physics Concept Analyzer Tool (PCAT)</h3>
-            <h4>Physics Education Research & Conceptual Modeling Engine</h4>
-            
-            <p><strong>The Mission:</strong> Developed as a core part of my physics education and research efforts, this app is designed to help students deeply understand complex physics problems by scaffolding the "solution modeling" phase.</p>
-            
-            <ul>
-                <li><strong>Functionality:</strong> Guides students through the cognitive steps of setting up a physics problem before they attempt calculation, ensuring they grasp the physical reality before doing the math.</li>
-                <li><strong>Pedagogical Impact:</strong> Shifts student focus from rote equation-hunting to building robust physical models, directly addressing the reasoning deficits often seen in introductory physics.</li>
-                <li><strong>Tech Stack:</strong> Python, Flask, JavaScript.</li>
-            </ul>
-            
-            <p><em>This tool is designed to serve as a "cognitive co-pilot," complementing experimental data acquisition tools by ensuring students understand the underlying physics models.</em></p>
         </div>
 
         <div class="project">
@@ -244,4 +254,3 @@ href="https://www.linkedin.com/in/shivam1kamboj">LinkedIn</a></p>
     </footer>
 </body>
 </html>
-
