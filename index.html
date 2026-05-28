@@ -33,11 +33,11 @@ I work at the intersection of theory, experiment, and large-scale computation, a
 <p>My background spans theoretical research, national-laboratory hardware work (LLNL), and experimental quantum optics. 
 I started as a theorist: modeling the Hamiltonian dynamics of strongly coupled spin-cavity and cavity-cavity systems, 
 writing custom numerical integrators for the noisy dynamics of open quantum systems, and building sparse 
-exact-diagonalization pipelines that run at scale on HPC clusters. But I don't stop at the model. At Lawrence Livermore 
-National Lab I moved into pulse-level control and quantum process tomography on superconducting qudit hardware, writing 
-the control and analysis code that closes the loop between a simulated device and its measured behavior, including a 
-constrained Maximum-Likelihood pipeline that reconstructs physically valid (CPTP) process maps from noisy experimental data. 
-I am now beginning to realize the theory I developed experimentally myself, moving hands-on with superconducting hardware 
+exact-diagonalization pipelines that run at scale on HPC clusters. But I don't stop at the model. At Lawrence Livermore National Lab, 
+I engineered pulse-level control and quantum process tomography software for superconducting qudit hardware. I wrote the generalized
+Python control and analysis pipelines that close the loop between Hamiltonian-level device models and measured hardware behavior. 
+This included deploying a modular, linear-inversion QPT pipeline utilizing pseudo-inverse techniques to provide rapid experimental 
+feedback and validate gate sequence fidelity. I am now beginning to realize the theory I developed experimentally myself, moving hands-on with superconducting hardware 
 to test predictions I first wrote down on paper.</p>
 
 <p>I do not just analyze data; I build the tools to understand it, and I build the systems that produce it. That arc, from 
@@ -115,7 +115,7 @@ technology genuinely useful.</p>
         <h4>Physics Graduate Intern (Quantum Computing) <span class="date-right">| Lawrence Livermore National Lab (LLNL) (May 2024 - Aug 2024)</span></h4>
         <ul>
             <li><strong>Pulse-Level Control:</strong> Developed pulse-level quantum control software in Python for superconducting qudit hardware; designed, benchmarked, and optimized gate sequences with fidelity improvements validated end-to-end via quantum process tomography.</li>
-            <li><strong>Process Tomography:</strong> Built a CPTP-constrained Maximum-Likelihood-Estimation pipeline that reconstructs physically valid process maps from noisy experimental tomography data, a constrained inverse problem central to automated device characterization.</li>
+            <li><strong>Process Tomography:</strong> Engineered a generalized, linear-inversion quantum process tomography (QPT) pipeline utilizing pseudo-inverse techniques to reconstruct process maps from noisy experimental data delivering the rapid hardware feedback central to automated superconducting device characterization.</li>
             <li><strong>Device Characterization:</strong> Fit Ramsey fringes and T1/T2 decay against experimental measurements, closing the loop between simulated device models and measured hardware behavior. Ramped into the group's measurement stack as a theorist and was contributing production-quality control and analysis code within weeks.</li>
         </ul>
     
