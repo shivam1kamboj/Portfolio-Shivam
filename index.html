@@ -27,30 +27,34 @@
         <img src="Pictures/Gemini_Generated_schematic.png" alt="Quantum Rabi Dimer Schematic" class="schematic-img" />
     </div>
         <h2>About Me</h2>
-<p>I am a PhD Candidate in Quantum Computing and Computational Physics at the University of California, Merced. 
-I work at the intersection of theory, experiment, and large-scale computation, and increasingly across all three at once.</p>
+<p>I am a PhD Candidate in Quantum Computing and Computational Physics at the University of California, Merced.
+I work at the intersection of theory, experiment, and large-scale computation, and increasingly across all three at once.
+My expertise is foundational and platform-agnostic: I treat a qubit as a two-level quantum system and a cavity as a
+bosonic mode, so the Hamiltonian-dynamics, open-systems, and quantum-control methods I work in transfer directly across
+hardware platforms &mdash; superconducting, atomic, or photonic.</p>
 
 <h2>My expertise rests on three core pillars:</h2>
 
-<h4>Hardware & Control: I've touched real devices. Engineered pulse-level control and linear-inversion quantum process tomography (QPT) pipelines to characterize superconducting qudit hardware (LLNL).</h4>
+<h4>Hardware & Control: I've worked hands-on with real devices. Built pulse-level control and linear-inversion quantum process tomography (QPT) pipelines to drive and characterize superconducting qudit hardware at LLNL &mdash; operating at the control and measurement layer.</h4>
 
 <h4>Theory & Simulation at Scale: I can model the physics rigorously. Built large-scale exact diagonalization and many-body Hamiltonian dynamics simulation pipelines running on SLURM/HPC clusters (Tian Group).</h4>
 
-<h4>Software & Deployment: I ship working code people use. Architected and deployed production tools, from full-stack LLM applications (Google Gemini API, GCP, Flask) to open-source QEC benchmarking libraries.</h4>
+<h4>Software & Deployment: I ship working code people use. Architected and deployed production tools, from a full-stack LLM application (Google Gemini API, GCP, Flask) to an open-source library for benchmarking quantum error correction under realistic noise (nonmarkov_qec).</h4>
 
-<p>My background spans theoretical research, national-laboratory hardware work (LLNL), and experimental quantum optics. 
-I started as a theorist: modeling the Hamiltonian dynamics of strongly coupled spin-cavity and cavity-cavity systems, 
-writing custom numerical integrators for the noisy dynamics of open quantum systems, and building sparse 
-exact-diagonalization pipelines that run at scale on HPC clusters. But I don't stop at the model. At Lawrence Livermore National Lab, 
+<p>My background spans theoretical research, national-laboratory control and characterization work (LLNL), and experimental quantum optics.
+I started as a theorist: modeling the Hamiltonian dynamics of strongly coupled spin-cavity and cavity-cavity systems,
+writing custom numerical integrators for the noisy dynamics of open quantum systems, and building sparse
+exact-diagonalization pipelines that run at scale on HPC clusters. But I don't stop at the model. At Lawrence Livermore National Lab,
 I engineered pulse-level control and quantum process tomography software for superconducting qudit hardware. I wrote the generalized
-Python control and analysis pipelines that close the loop between Hamiltonian-level device models and measured hardware behavior. 
-This included deploying a modular, linear-inversion QPT pipeline utilizing pseudo-inverse techniques to provide rapid experimental 
-feedback and validate gate sequence fidelity. I am now beginning to realize the theory I developed experimentally myself, moving hands-on with superconducting hardware 
-to test predictions I first wrote down on paper.</p>
+Python control and analysis pipelines that close the loop between gate-level control models and measured hardware behavior. Concretely,
+that meant driving, measuring, and benchmarking real superconducting devices at the control and characterization layer, with a modular
+linear-inversion QPT pipeline using pseudo-inverse reconstruction for rapid experimental feedback and gate-sequence fidelity validation.
+I'm now deepening that hardware fluency directly: through hands-on experimental work in the Sharping Lab this summer, I'm building
+in-depth, device-level knowledge of superconducting hardware and chip design to pair with the foundational theory.</p>
 
-<p>I do not just analyze data; I build the tools to understand it, and I build the systems that produce it. That arc, from 
-Hamiltonian to simulation to a working experiment, is what I care about most. I am seeking research and engineering 
-opportunities where I can apply this end-to-end fluency in quantum modeling, control, and hardware to make quantum 
+<p>I do not just analyze data; I build the tools to understand it, and I build the systems that produce it. That arc, from
+Hamiltonian to simulation to a working experiment, is what I care about most. I am seeking research and engineering
+opportunities where I can apply this end-to-end fluency in quantum modeling, control, and hardware to make quantum
 technology genuinely useful.</p>
     </section>
 
@@ -58,7 +62,7 @@ technology genuinely useful.</p>
         <h2>Technical Expertise</h2>
         <div class="skills-grid">
             <ul>
-                <li><strong>Superconducting Qubit Control & Characterization:</strong> Pulse-level control, gate-sequence optimization, quantum process tomography (QPT), CPTP-constrained MLE reconstruction, T1/T2 and Ramsey characterization.</li>
+                <li><strong>Superconducting Qubit Control & Characterization:</strong> Pulse-level control, gate-sequence optimization, quantum process tomography (QPT) via linear inversion with pseudo-inverse reconstruction, T1/T2 and Ramsey characterization.</li>
                 <li><strong>Scientific Computing:</strong> Exact Diagonalization, Hamiltonian Simulation, open quantum systems, sparse linear algebra, High-Performance Computing (HPC / SLURM).</li>
                 <li><strong>Programming & Scripting:</strong> Python (NumPy, SciPy, Pandas, Matplotlib, Flask), Qiskit, QuTiP, familiarity with C++; JavaScript, HTML5/CSS3.</li>
                 <li><strong>Machine Learning & Numerics:</strong> TensorFlow, Keras, constrained optimization and inverse problems, model fitting and validation.</li>
@@ -74,9 +78,9 @@ technology genuinely useful.</p>
             of strongly coupled spin-cavity systems to understand their complex dynamics. By exploring the "Quantum Rabi Array," 
             I study the spectral structure, critical dynamics, and quantum phase transitions of strong light-matter coupling, 
             with the goal of advancing techniques to mitigate errors and address the critical challenge of decoherence. These are 
-            the same theoretical structures that underlie superconducting transmon-resonator and bosonic-code hardware designs, 
-            so the work contributes both to the theoretical understanding of coupled quantum systems and to the practical design 
-            of next-generation quantum computing hardware.</p>
+            the same theoretical structures that underlie superconducting transmon-resonator and bosonic-code platforms, 
+            so the work speaks to both the theoretical understanding of strongly coupled quantum systems and the modeling 
+            foundations relevant to next-generation quantum hardware.</p>
             </div>
     <h2>Quantum Rabi Array Simulation Interface</h2>
     <h3>Project Overview:</h3>
@@ -124,13 +128,13 @@ technology genuinely useful.</p>
         <ul>
             <li><strong>Pulse-Level Control:</strong> Developed pulse-level quantum control software in Python for superconducting qudit hardware; designed, benchmarked, and optimized gate sequences with fidelity improvements validated end-to-end via quantum process tomography.</li>
             <li><strong>Process Tomography:</strong> Engineered a generalized, linear-inversion quantum process tomography (QPT) pipeline utilizing pseudo-inverse techniques to reconstruct process maps from noisy experimental data delivering the rapid hardware feedback central to automated superconducting device characterization.</li>
-            <li><strong>Device Characterization:</strong> Fit Ramsey fringes and T1/T2 decay against experimental measurements, closing the loop between simulated device models and measured hardware behavior. Ramped into the group's measurement stack as a theorist and was contributing production-quality control and analysis code within weeks.</li>
+            <li><strong>Device Characterization:</strong> Fit Ramsey fringes and T1/T2 decay against experimental measurements, closing the loop between simulated control models and measured hardware behavior. Ramped into the group's measurement stack as a theorist and was contributing production-quality control and analysis code within weeks.</li>
         </ul>
     
         <h4>Graduate Student Researcher <span class="date-right">| University of California, Merced (May 2023 - Present)</span></h4>
         <ul>
             <li>Lead investigator on the Quantum Rabi Array project under Prof. Lin Tian, characterizing quantum state evolution and phase transitions in strong light-matter coupling regimes via sparse exact diagonalization on HPC clusters; first-author manuscript in preparation.</li>
-            <li>Functioning at a postdoctoral capacity: independently driving the project and coordinating with the experimental Sharping Group on a shared cavity-QED platform, now moving into hands-on experimental work on superconducting hardware.</li>
+            <li>Functioning at a postdoctoral capacity: independently driving the project and coordinating with the experimental Sharping Group on a shared cavity-QED platform, and now building hands-on, device-level experience with superconducting hardware in the lab.</li>
             <li>Designed, built, and deployed the "Physics Concept Analyzer Tool" (PCAT), a full-stack application now in active production use at UC Merced.</li>
         </ul>
     
@@ -153,7 +157,7 @@ technology genuinely useful.</p>
 target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
         <p>Shivam Kamboj and Lin Tian, "Critical Dynamics and Spectral Analysis of the Frequency-Modulated Quantum Rabi Dimer", manuscript in preparation, targeted submission 2026.</p>
         <p>Shivam Kamboj, and Hilary M. Hurst "Topology of a Driven 2D Spin Torque Oscillator Array" APS March Meeting 2022, [Chicago, Illinois],
-            <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MART00249K" target="_blank"> Abstract ID: T00.249.</a></p>
+            <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MART00249K" target="_blank">Abstract ID: T00.249.</a></p>
          <p>Hilary M. Hurst, Rembert A. Duine, Benedetta Flebus, Shivam Kamboj "Exploring non-Hermitian topology with spin-torque oscillator arrays" APS March Meeting 2022, [Chicago, Illinois],
              <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MARK52002H" target="_blank">Abstract ID: K52.002.</a></p>
 
@@ -161,6 +165,24 @@ target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
 
     <section id="projects">
         <h2>Key Projects</h2>
+
+        <div class="project">
+    <h3>nonmarkov_qec: Benchmarking Quantum Error Correction Under Non-Markovian Noise</h3>
+    <h4>Open-source library &mdash; v1 released</h4>
+    <p><strong>The Problem:</strong> Most QEC threshold studies assume Markovian (memoryless) noise, but real
+       devices are dominated by temporally correlated, 1/f-type noise. nonmarkov_qec supplies reproducible,
+       physics-grounded correlated-noise models for stress-testing error-correcting codes against the noise
+       hardware actually exhibits.</p>
+    <ul>
+        <li><strong>Validated noise engine (v1):</strong> An Ornstein&ndash;Uhlenbeck (OU) trajectory sampler and a
+            sum-of-OU approximation to 1/f noise, both numerically validated against their target spectral statistics.</li>
+        <li><strong>Built for QEC pipelines:</strong> Designed to feed correlated-noise trajectories into stabilizer
+            simulation and decoding (Stim / PyMatching) for surface-code threshold studies under non-Markovian noise
+            &mdash; integration and threshold experiments in active development.</li>
+        <li><strong>Tech Stack:</strong> Python, NumPy/SciPy, Stim, PyMatching.</li>
+    </ul>
+    <p><a href="https://github.com/shivam1kamboj/nonmarkov_qec" target="_blank">View Repository on GitHub</a></p>
+</div>
     
         <div class="project">
             <h3>High-Performance Algorithm: Sparse Matrix Diagonalization</h3>
