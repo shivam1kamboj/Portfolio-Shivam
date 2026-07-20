@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shivam Kamboj's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shivam Kamboj — PhD candidate in quantum computing and computational physics at UC Merced. Superconducting qubit control, quantum process tomography, Hamiltonian simulation, HPC, and quantum error correction. Expected graduation Fall 2026.">
+    <title>Shivam Kamboj — Quantum Computing Researcher</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
         <h1>Shivam Kamboj</h1>
-        <p>PhD (Physics) Scholar | University of California, Merced</p>
+        <p>PhD Candidate, Physics (Quantum Computing) | University of California, Merced | Expected graduation: Fall 2026</p>
     </header>
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Technical Skills</a></li> <li><a href="#Headline">Research & Innovation</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#Headline">Research & Innovation</a></li>
             <li><a href="#Work">Professional Experience</a></li>
             <li><a href="#projects">Software & Projects</a></li>
             <li><a href="#publications">Publications</a></li>
@@ -21,41 +25,41 @@
             <li><a href="Pictures/Shivam_Kamboj_CV.pdf" target="_blank">CV</a></li>
         </ul>
     </nav>
+
     <section id="about">
     <div class="about-images">
         <img src="Pictures/SK_at_SJSU.jpeg" alt="Shivam Kamboj Profile" class="portrait-img" />
-        
-        <img src="Pictures/Gemini_Generated_schematic.png" alt="Quantum Rabi Dimer Schematic" class="schematic-img" />
+        <img src="Pictures/qrd_schematic.png" alt="Quantum Rabi Dimer Schematic" class="schematic-img" />
     </div>
         <h2>About Me</h2>
-<p>I am a PhD Candidate in Quantum Computing and Computational Physics at the University of California, Merced.
-I work at the intersection of theory, experiment, and large-scale computation, and increasingly across all three at once.
+<p>I am a PhD candidate in quantum computing and computational physics at UC Merced (advisor: Prof. Lin Tian),
+graduating in Fall 2026. I work at the intersection of theory, experiment, and large-scale computation.
 My expertise is foundational and platform-agnostic: I treat a qubit as a two-level quantum system and a cavity as a
-bosonic mode, so the Hamiltonian-dynamics, open-systems, and quantum-control methods I work in transfer directly across
-hardware platforms &mdash; superconducting, atomic, or photonic.</p>
+bosonic mode, so the Hamiltonian-dynamics, open-systems, and quantum-control methods I use transfer directly across
+superconducting, atomic, and photonic hardware.</p>
 
-<h2>My expertise rests on three core pillars:</h2>
+<h3>Three core pillars:</h3>
+<ul>
+    <li><strong>Hardware &amp; Control:</strong> Hands-on with real devices. At LLNL I built pulse-level control and
+        linear-inversion quantum process tomography (QPT) pipelines to drive and characterize superconducting qudit
+        hardware &mdash; operating at the control and measurement layer.</li>
+    <li><strong>Theory &amp; Simulation at Scale:</strong> Rigorous physics modeling. I build large-scale sparse
+        exact-diagonalization and open-quantum-system dynamics pipelines that run on SLURM/HPC clusters (Tian Group).</li>
+    <li><strong>Software &amp; Deployment:</strong> I ship working code people use &mdash; from a full-stack LLM
+        application in production at UC Merced (Google Gemini API, GCP, Flask) to an open-source library for
+        benchmarking quantum error correction under realistic noise (nonmarkov_qec).</li>
+</ul>
 
-<h4>Hardware & Control: I've worked hands-on with real devices. Built pulse-level control and linear-inversion quantum process tomography (QPT) pipelines to drive and characterize superconducting qudit hardware at LLNL &mdash; operating at the control and measurement layer.</h4>
+<p>I started as a theorist &mdash; modeling strongly coupled spin-cavity and cavity-cavity systems, writing custom
+numerical integrators for noisy open-system dynamics, and building sparse exact-diagonalization pipelines at HPC scale.
+At Lawrence Livermore National Lab, I closed the loop with hardware: I wrote the generalized Python control and
+analysis pipelines connecting gate-level control models to measured device behavior, including a modular
+linear-inversion QPT pipeline for rapid experimental feedback and gate-sequence fidelity validation. I am now
+deepening that hardware fluency through hands-on experimental work on superconducting hardware and chip design in the
+Sharping Lab.</p>
 
-<h4>Theory & Simulation at Scale: I can model the physics rigorously. Built large-scale exact diagonalization and many-body Hamiltonian dynamics simulation pipelines running on SLURM/HPC clusters (Tian Group).</h4>
-
-<h4>Software & Deployment: I ship working code people use. Architected and deployed production tools, from a full-stack LLM application (Google Gemini API, GCP, Flask) to an open-source library for benchmarking quantum error correction under realistic noise (nonmarkov_qec).</h4>
-
-<p>My background spans theoretical research, national-laboratory control and characterization work (LLNL), and experimental quantum optics.
-I started as a theorist: modeling the Hamiltonian dynamics of strongly coupled spin-cavity and cavity-cavity systems,
-writing custom numerical integrators for the noisy dynamics of open quantum systems, and building sparse
-exact-diagonalization pipelines that run at scale on HPC clusters. But I don't stop at the model. At Lawrence Livermore National Lab,
-I engineered pulse-level control and quantum process tomography software for superconducting qudit hardware. I wrote the generalized
-Python control and analysis pipelines that close the loop between gate-level control models and measured hardware behavior. Concretely,
-that meant driving, measuring, and benchmarking real superconducting devices at the control and characterization layer, with a modular
-linear-inversion QPT pipeline using pseudo-inverse reconstruction for rapid experimental feedback and gate-sequence fidelity validation.
-I'm now deepening that hardware fluency directly: through hands-on experimental work in the Sharping Lab this summer, I'm building
-in-depth, device-level knowledge of superconducting hardware and chip design to pair with the foundational theory.</p>
-
-<p>I do not just analyze data; I build the tools to understand it, and I build the systems that produce it. That arc, from
-Hamiltonian to simulation to a working experiment, is what I care about most. I am seeking research and engineering
-opportunities where I can apply this end-to-end fluency in quantum modeling, control, and hardware to make quantum
+<p>The arc from Hamiltonian to simulation to a working experiment is what I care about most. I am seeking research and
+engineering roles where I can apply this end-to-end fluency in quantum modeling, control, and hardware to make quantum
 technology genuinely useful.</p>
     </section>
 
@@ -63,11 +67,12 @@ technology genuinely useful.</p>
         <h2>Technical Expertise</h2>
         <div class="skills-grid">
             <ul>
-                <li><strong>Superconducting Qubit Control & Characterization:</strong> Pulse-level control, gate-sequence optimization, quantum process tomography (QPT) via linear inversion with pseudo-inverse reconstruction, T1/T2 and Ramsey characterization.</li>
-                <li><strong>Scientific Computing:</strong> Exact Diagonalization, Hamiltonian Simulation, open quantum systems, sparse linear algebra, High-Performance Computing (HPC / SLURM).</li>
-                <li><strong>Programming & Scripting:</strong> Python (NumPy, SciPy, Pandas, Matplotlib, Flask), Qiskit, QuTiP, familiarity with C++; JavaScript, HTML5/CSS3.</li>
-                <li><strong>Machine Learning & Numerics:</strong> TensorFlow, Keras, constrained optimization and inverse problems, model fitting and validation.</li>
-                <li><strong>Tools & Frameworks:</strong> Git/GitHub, Linux, Google Cloud (App Engine), LaTeX, pytest.</li>
+                <li><strong>Superconducting Qubit Control &amp; Characterization:</strong> Pulse-level control, gate-sequence optimization, quantum process tomography (QPT) via linear inversion with pseudo-inverse reconstruction, T1/T2 and Ramsey characterization.</li>
+                <li><strong>Scientific Computing:</strong> Exact diagonalization, Hamiltonian simulation, open quantum systems, sparse linear algebra, high-performance computing (HPC / SLURM).</li>
+                <li><strong>Quantum Error Correction:</strong> Surface-code simulation, stabilizer methods, correlated (non-Markovian) noise modeling, Stim / PyMatching.</li>
+                <li><strong>Programming &amp; Scripting:</strong> Python (NumPy, SciPy, Pandas, Matplotlib, Flask), QuTiP, Qiskit, Cirq; familiarity with C++; JavaScript, HTML5/CSS3.</li>
+                <li><strong>Machine Learning &amp; Numerics:</strong> TensorFlow, Keras, constrained optimization and inverse problems, model fitting and validation.</li>
+                <li><strong>Tools &amp; Frameworks:</strong> Git/GitHub, Linux, Google Cloud (App Engine), LaTeX, pytest.</li>
             </ul>
         </div>
     </section>
@@ -75,93 +80,48 @@ technology genuinely useful.</p>
     <section id="Headline">
         <div class="highlighted-description">
         <h2>Current Research</h2>
-        <p>As a doctoral student working with Prof. Lin Tian in Quantum Computing, my research focuses on simulating arrays 
-            of strongly coupled spin-cavity systems to understand their complex dynamics. By exploring the "Quantum Rabi Array," 
-            I study the spectral structure, critical dynamics, and quantum phase transitions of strong light-matter coupling, 
-            with the goal of advancing techniques to mitigate errors and address the critical challenge of decoherence. These are 
-            the same theoretical structures that underlie superconducting transmon-resonator and bosonic-code platforms, 
-            so the work speaks to both the theoretical understanding of strongly coupled quantum systems and the modeling 
-            foundations relevant to next-generation quantum hardware.</p>
-            </div>
-    <h2>Quantum Rabi Array Simulation Interface</h2>
-    <h3>Project Overview:</h3>
-    <p>
-        Developed an interactive web interface for the simulation and analysis of a two-site Quantum Rabi Array (QRA),
-        a cornerstone in my PhD research in Quantum Computing. This comprehensive tool facilitates the exploration of
-        quantum cavity interactions and photon exchange dynamics, crucial for advancing quantum computational models.
-        The web interface is not available for public and kept private to keep the unpublished results safe.
-    </p>
-
-    <h3>Technologies Used:</h3>
-    <ul>
-        <li><strong>Backend:</strong> Python
-            <ul>
-                <li>Implemented numerical calculations using Numpy library's linear algebra to model quantum behaviors with high precision.</li>
-                <li>Employed Flask as a server-side framework to handle HTTP requests and serve computational results to the frontend.</li>
-            </ul>
-        </li>
-        <li><strong>Frontend:</strong>
-            <ul>
-                <li>Crafted a responsive and intuitive user interface with HTML5 and CSS3, ensuring a seamless user experience across various devices and screen sizes.</li>
-                <li>Utilized JavaScript to create dynamic visualizations of quantum states, enabling real-time interaction with the quantum models.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h3>Features:</h3>
-    <ul>
-        <li>Interactive Visualization: Real-time graphical representation of QRA dynamics, allowing users to visualize and intuitively understand complex quantum phenomena.</li>
-        <li>Custom Simulation Configuration: Users can modify key parameters of the QRA model to investigate different quantum behaviors and cavity interaction regimes.</li>
-        <li>On-the-fly Calculations: Backend Python algorithms perform calculations in response to user input, demonstrating the array's reactions to variable conditions instantly.</li>
-        <li>Educational Tool: Serves as a pedagogical platform for students and researchers new to Quantum Computing, providing a hands-on approach to quantum theory fundamentals.</li>
-    </ul>
-
-    <h3>Outcome:</h3>
-    <p>
-        The 'Quantum Rabi Array Simulation Interface' stands as a testament to the synergy between advanced quantum physics research and cutting-edge web technologies, presenting a novel approach to quantum computing simulations.
-    </p>
+        <p>My doctoral research with Prof. Lin Tian centers on the Quantum Rabi Dimer: coupled cavity&ndash;qubit
+            systems in the ultrastrong-coupling regime. Using large-scale exact diagonalization and open-system
+            dynamics on HPC clusters, I map the spectral structure, symmetry protection, and quantum phase behavior of
+            these arrays and show how their ground-state structure supports deterministic Schr&ouml;dinger-cat states
+            and parity-protected, noise-biased bosonic qubits. These are the same theoretical structures that underlie
+            superconducting transmon-resonator and bosonic-code platforms, so the work connects fundamental
+            light-matter physics directly to the modeling foundations of next-generation quantum hardware. Two
+            first-author manuscripts are in preparation, including a superconducting-circuit realization developed in
+            discussion with experimental collaborators.</p>
+        </div>
+        <p>To support this research, I also built a private full-stack simulation interface for the model
+            (Python/Flask backend, JavaScript visualization) &mdash; described in <a href="#projects">Software &amp;
+            Projects</a> below. It is kept private to protect unpublished results.</p>
     </section>
 
     <section id="Work">
-        <h2>Professional & Research Experience</h2>
-    
+        <h2>Professional &amp; Research Experience</h2>
+
         <h4>Physics Graduate Intern (Quantum Computing) <span class="date-right">| Lawrence Livermore National Lab (LLNL) (May 2024 - Aug 2024)</span></h4>
         <ul>
             <li><strong>Pulse-Level Control:</strong> Developed pulse-level quantum control software in Python for superconducting qudit hardware; designed, benchmarked, and optimized gate sequences with fidelity improvements validated end-to-end via quantum process tomography.</li>
-            <li><strong>Process Tomography:</strong> Engineered a generalized, linear-inversion quantum process tomography (QPT) pipeline utilizing pseudo-inverse techniques to reconstruct process maps from noisy experimental data delivering the rapid hardware feedback central to automated superconducting device characterization.</li>
-            <li><strong>Device Characterization:</strong> Fit Ramsey fringes and T1/T2 decay against experimental measurements, closing the loop between simulated control models and measured hardware behavior. Ramped into the group's measurement stack as a theorist and was contributing production-quality control and analysis code within weeks.</li>
+            <li><strong>Process Tomography:</strong> Engineered a generalized, linear-inversion quantum process tomography (QPT) pipeline using pseudo-inverse reconstruction of process maps from noisy experimental data, delivering the rapid hardware feedback central to automated superconducting device characterization.</li>
+            <li><strong>Device Characterization:</strong> Fit Ramsey fringes and T1/T2 decay against experimental measurements, closing the loop between simulated control models and measured hardware behavior; joined as a theorist and was contributing production-quality control and analysis code within weeks.</li>
         </ul>
-    
+
         <h4>Graduate Student Researcher <span class="date-right">| University of California, Merced (May 2023 - Present)</span></h4>
         <ul>
-            <li>Lead investigator on the Quantum Rabi Array project under Prof. Lin Tian, characterizing quantum state evolution and phase transitions in strong light-matter coupling regimes via sparse exact diagonalization on HPC clusters; first-author manuscript in preparation.</li>
-            <li>Functioning at a postdoctoral capacity: independently driving the project and coordinating with the experimental Sharping Group on a shared cavity-QED platform, and now building hands-on, device-level experience with superconducting hardware in the lab.</li>
+            <li>Lead investigator on the Quantum Rabi Dimer project under Prof. Lin Tian: characterizing quantum state evolution, symmetry protection, and phase behavior in the ultrastrong light-matter coupling regime via sparse exact diagonalization and open-system simulation on HPC clusters; two first-author manuscripts in preparation.</li>
+            <li>Independently drive the project end-to-end &mdash; from analytical theory through large-scale simulation to a proposed circuit realization &mdash; and coordinate with the experimental Sharping Group on a shared cavity-QED platform, building hands-on, device-level experience with superconducting hardware.</li>
             <li>Designed, built, and deployed the "Physics Concept Analyzer Tool" (PCAT), a full-stack application now in active production use at UC Merced.</li>
         </ul>
-    
+
         <h2>Teaching Leadership</h2>
-        <p><em>"I am strongly influenced by the teaching style of Prof. Richard P. Feynman; focusing on explaining complex physical concepts in accessible, intuitive ways."</em></p>
-        
-        <h4>Teaching Assistant (Multiple Courses) <span class="date-right">| UC Merced & SJSU (2021 - Present)</span></h4>
+        <p><em>My teaching is strongly influenced by Richard Feynman's style: explaining complex physical concepts in accessible, intuitive ways.</em></p>
+
+        <h4>Teaching Assistant (Multiple Courses) <span class="date-right">| UC Merced &amp; SJSU (2021 - Present)</span></h4>
         <ul>
-            <li><strong>EdTech Integration:</strong> Piloted the "Physics Concept Analyzer Tool" (PCAT) to assist students in modeling solutions for discussion problems, improving engagement with complex material.</li>
             <li><strong>Award Winning:</strong> Two-time recipient of the Outstanding Teaching Assistant Award (UC Merced 2026, SJSU 2022) for pedagogical excellence.</li>
+            <li><strong>EdTech Integration:</strong> Piloted the "Physics Concept Analyzer Tool" (PCAT) to help students model solutions for discussion problems, improving engagement with complex material.</li>
             <li><strong>Curriculum Development:</strong> Collaborated with faculty to design inquiry-based laboratory exercises for biological science students.</li>
             <li><strong>Mentorship:</strong> Mentored undergraduate students in the "Learning Assistant - Reflection, Guidance and Exploration" program.</li>
         </ul>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <p>Shivam Kamboj, Rembert A. Duine, Benedetta Flebus, and Hilary M. Hurst "Oscillatory
-            edge modes in two dimensional spin-torque oscillator arrays", Physical Review B (2024) <a href="https://link.aps.org/doi/10.1103/PhysRevB.109.094436"
-target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
-        <p>Shivam Kamboj and L. Tian, ``Deterministic Cat States and Parity-Protected Bosonic Qubits in the Quantum Rabi Dimer,'' manuscript in preparation, targeted submission 2026.</p>
-        <p>Shivam Kamboj, and Hilary M. Hurst "Topology of a Driven 2D Spin Torque Oscillator Array" APS March Meeting 2022, [Chicago, Illinois],
-            <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MART00249K" target="_blank">Abstract ID: T00.249.</a></p>
-         <p>Hilary M. Hurst, Rembert A. Duine, Benedetta Flebus, Shivam Kamboj "Exploring non-Hermitian topology with spin-torque oscillator arrays" APS March Meeting 2022, [Chicago, Illinois],
-             <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MARK52002H" target="_blank">Abstract ID: K52.002.</a></p>
-
     </section>
 
     <section id="projects">
@@ -184,7 +144,7 @@ target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
     </ul>
     <p><a href="https://github.com/shivam1kamboj/nonmarkov_qec" target="_blank">View Repository on GitHub</a></p>
 </div>
-    
+
         <div class="project">
             <h3>High-Performance Algorithm: Sparse Matrix Diagonalization</h3>
             <p><strong>The Problem:</strong> Standard NumPy routines were too slow for diagonalizing (250,000 x 250,000) Hamiltonian matrices in 2D STO arrays.</p>
@@ -192,13 +152,11 @@ target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
             <p><strong>The Impact:</strong> <span style="color: #d9534f; font-weight: bold;">Reduced execution time from 3,500 seconds to 66 seconds (98% speedup).</span></p>
             <p><a href="https://github.com/shivam1kamboj/2D_STO_Model/blob/master/spectrum_using_fast_diagonalization/Fast_algorithm.py" target="_blank">View Code on GitHub</a></p>
         </div>
-    
+
         <div class="project">
             <h3>Physics Concept Analyzer Tool (PCAT)</h3>
             <h4>Full-Stack, Deployed Application, in active production use at UC Merced</h4>
-            
-            <p><strong>The Mission:</strong> Designed, built, and deployed a customer-facing application end-to-end, taking it from specification to production and real end-user adoption, concrete evidence of translating research into deployable, maintained software.</p>
-            
+            <p><strong>The Mission:</strong> Designed, built, and deployed a user-facing application end-to-end &mdash; from specification to production and real end-user adoption &mdash; concrete evidence of translating research into deployable, maintained software.</p>
             <ul>
                 <li><strong>Architecture:</strong> Built end-to-end on Flask + Google App Engine, with a structured LLM pipeline integrating Google Gemini and multimodal input (text, voice, PDF/figure attachments).</li>
                 <li><strong>Functionality:</strong> Scaffolds the cognitive steps of setting up a physics problem (concept identification, modeling steps, common pitfalls, self-assessment) before calculation, shifting students from rote equation-hunting to building robust physical models.</li>
@@ -207,11 +165,11 @@ target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
         </div>
 
         <div class="project">
-            <h3>Quantum Rabi Array Simulation Interface (Full Stack Web App)</h3>
+            <h3>Quantum Rabi Dimer Simulation Interface (Full-Stack Web App)</h3>
             <ul>
-                <li><strong>Overview:</strong> A comprehensive interactive web tool for analyzing photon exchange dynamics in quantum cavities.</li>
-                <li><strong>Tech Stack:</strong> Python (Backend computation), Flask (API), JavaScript (Frontend Visualization).</li>
-                <li><strong>Features:</strong> Enables real-time, on-the-fly calculation of quantum states based on user-manipulated parameters.</li>
+                <li><strong>Overview:</strong> An interactive research tool for exploring photon-exchange dynamics and cavity-interaction regimes in the two-site Quantum Rabi model &mdash; the system at the center of my PhD research. Users adjust model parameters and see quantum states recomputed and visualized in real time.</li>
+                <li><strong>Tech Stack:</strong> Python (NumPy linear-algebra backend), Flask (API), JavaScript (frontend visualization), HTML5/CSS3.</li>
+                <li><strong>Note:</strong> Kept private to protect unpublished results; available to discuss in interviews.</li>
             </ul>
         </div>
 
@@ -220,68 +178,65 @@ target = "_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
             <ul>
                 <li><strong>Overview:</strong> A web-based simulation demonstrating the inherent security of quantum encryption through the BB84 Quantum Key Distribution protocol.</li>
                 <li><strong>Tech Stack:</strong> Python, Flask, HTML/Jinja2, and Google Cirq for backend quantum circuit simulations.</li>
-                <li><strong>Features:</strong> Simulates the key exchange between Alice and Bob, and includes a specific module to introduce an eavesdropper (Eve). It visually demonstrates how the act of measurement inevitably alters quantum states, allowing users to observe the disturbed correlations that reveal interception attempts.</li>
+                <li><strong>Features:</strong> Simulates the key exchange between Alice and Bob, and includes a module to introduce an eavesdropper (Eve), visually demonstrating how measurement disturbs quantum states and reveals interception attempts.</li>
             </ul>
             <p><a href="https://github.com/shivam1kamboj/QKD_interface/tree/master" target="_blank">View Repository on GitHub</a></p>
         </div>
-        
+
         <div class="project">
             <h3>Quantum Error Correction: Surface Code Simulation</h3>
             <ul>
                 <li><strong>Overview:</strong> A Python-based simulation of a distance-3 surface code, built to demonstrate foundational principles of quantum error correction.</li>
                 <li><strong>Tech Stack:</strong> Python, NumPy.</li>
-                <li><strong>Features:</strong> The script initializes a grid of data qubits, introduces random bit-flip errors, and measures stabilizers to generate error syndromes. It then tracks error candidates based on overlapping stabilizers to successfully correct the errors and restore the logical state.</li>
+                <li><strong>Features:</strong> Initializes a grid of data qubits, introduces random bit-flip errors, measures stabilizers to generate error syndromes, and tracks error candidates via overlapping stabilizers to correct errors and restore the logical state.</li>
             </ul>
             <p><a href="https://github.com/shivam1kamboj/Surface-Code-Simulation/blob/main/D_3.py.ipynb" target="_blank">View Code on GitHub</a></p>
         </div>
-    
+
         <div class="project">
             <h3>Machine Learning: Handwritten Digit Recognition</h3>
             <p>Implemented a Neural Network using <strong>TensorFlow and Keras</strong>. Focused on data preprocessing and architecture optimization to achieve high-accuracy digit recognition. <a href="https://github.com/shivam1kamboj/Neural-Network-basics.git" target="_blank">View Repository</a>.</p>
         </div>
     </section>
 
-      <section id="Awards">
-        <h2>Outreach and Awards:</h2>
-    <ul class="no-bullets">
-        <li><strong>Recipient of Outstanding Graduate Teaching <a href="Certificates.html">Award</a></strong>, UC Merced<span class="date-right">2026</span></li>
-        <li><strong>Physics graduate group summer fellowship ($7000)</strong>, UC Merced <span class="date-right">2026</span></li>
-        <li><strong>Physics graduate group travel fellowship ($750)</strong>, UC Merced <span class="date-right">2026</span></li>
-        <li><strong>Physics graduate group summer fellowship ($7000)</strong>, UC Merced <span class="date-right">2025</span></li>
-        <li><strong>Guest lecture presentation at the computational physics (PHYS 281) course at UC Merced</strong>, UC Merced <span class="date-right">2024</span></li>
-        <li><strong>Physics Delegate in Graduate Student Association at UC Merced</strong>, UC Merced <span class="date-right">2024</span></li>
-        <li><strong>Poster presentation at Lawrence Livermore National Lab in student poster symposium in PLS division</strong>, LLNL, Livermore CA <span class="date-right">2024</span></li>
-        <li><strong>Delivered a presentation on 'Simulating Quantum Systems' at the Friday Seminar Series</strong>, CSU, Stanislaus <span class="date-right">2024</span></li>
-        <li><strong>Member of Graduate Dean Advisory Council on Diversity (GDACD)</strong>, UC Merced <span class="date-right">2023</span></li>
-            <p>Received stipend of $300 for the selected academic year 2023-2024</p>
-        <li><strong>Real World Quantum Computing Workshop</strong>, Lawrence Livermore National Lab <span class="date-right">2023</span></li>
-        <li>
-            <strong>Advanced Quantum Testbed (AQT) Summit</strong>, Lawrence Berkeley National Lab <span class="date-right">2025</span>
-            <br>
-            <span style="color: #444;">
-                Participated in exclusive technical sessions on superconducting qubit scalability, regarding quantum error mitigation strategies.
-            </span>
-        </li>
-        <li><strong>Recipient of Outstanding Teaching Assistant Award</strong>, San Jose State University, San Jose, CA <span class="date-right">2022</span></li>
-        <p> Awarded with $1000. Please see the news 2022 on University <a href="https://sjsu.edu/physics/" target="_blank"> webpage</a> for detailed description of the award if you are interested to know. You can find the news under headline
-            "Departmental Student Award Winners Announced". You can also view the snapshot on certificate <a href="Certificates.html">page</a>.
-        </p>
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>Shivam Kamboj, Rembert A. Duine, Benedetta Flebus, and Hilary M. Hurst, "Oscillatory
+            edge modes in two dimensional spin-torque oscillator arrays", Physical Review B (2024). <a href="https://link.aps.org/doi/10.1103/PhysRevB.109.094436"
+target="_blank">DOI: 10.1103/PhysRevB.109.094436</a></p>
+        <p>Shivam Kamboj and Lin Tian, "Deterministic Cat States and Parity-Protected Bosonic Qubits in the Quantum Rabi Dimer", manuscript in preparation, targeted submission 2026.</p>
+        <p>Shivam Kamboj and Lin Tian, superconducting-circuit realization of the Quantum Rabi Dimer, manuscript in preparation.</p>
+        <p>Shivam Kamboj and Hilary M. Hurst, "Topology of a Driven 2D Spin Torque Oscillator Array", APS March Meeting 2022, Chicago, Illinois.
+            <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MART00249K" target="_blank">Abstract ID: T00.249</a></p>
+        <p>Hilary M. Hurst, Rembert A. Duine, Benedetta Flebus, and Shivam Kamboj, "Exploring non-Hermitian topology with spin-torque oscillator arrays", APS March Meeting 2022, Chicago, Illinois.
+            <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MARK52002H" target="_blank">Abstract ID: K52.002</a></p>
+    </section>
 
-        <li><strong>Mentor: Learning Assistant - Reflection, Guidance and Exploration (LA-RGE)</strong> <span class="date-right">2022</span></li>
-        <p>
-        For the LA-RGE Program, I was awarded a stipend of $1500. A certificate detailing my contribution to the program is available.
-            You can view the <a href="Certificates.html">certificate here</a>.
-    </p>
+      <section id="Awards">
+        <h2>Outreach and Awards</h2>
+    <ul class="no-bullets">
+        <li><strong>Recipient of Outstanding Graduate Teaching <a href="Certificates.html">Award</a></strong>, UC Merced <span class="date-right">2026</span></li>
+        <li><strong>Physics Graduate Group Summer Fellowship ($7,000)</strong>, UC Merced <span class="date-right">2026</span></li>
+        <li><strong>Physics Graduate Group Travel Fellowship ($750)</strong>, UC Merced <span class="date-right">2026</span></li>
+        <li><strong>Physics Graduate Group Summer Fellowship ($7,000)</strong>, UC Merced <span class="date-right">2025</span></li>
+        <li><strong>Advanced Quantum Testbed (AQT) Summit</strong>, Lawrence Berkeley National Lab &mdash; technical sessions on superconducting qubit scalability and quantum error mitigation <span class="date-right">2025</span></li>
+        <li><strong>Guest Lecture, Computational Physics (PHYS 281)</strong>, UC Merced <span class="date-right">2024</span></li>
+        <li><strong>Physics Delegate, Graduate Student Association</strong>, UC Merced <span class="date-right">2024</span></li>
+        <li><strong>Poster Presentation, PLS Division Student Poster Symposium</strong>, Lawrence Livermore National Lab <span class="date-right">2024</span></li>
+        <li><strong>Invited Talk, "Simulating Quantum Systems", Friday Seminar Series</strong>, CSU Stanislaus <span class="date-right">2024</span></li>
+        <li><strong>Member, Graduate Dean Advisory Council on Diversity (GDACD)</strong>, UC Merced <span class="date-right">2023</span></li>
+        <li><strong>Real World Quantum Computing Workshop</strong>, Lawrence Livermore National Lab <span class="date-right">2023</span></li>
+        <li><strong>Recipient of Outstanding Teaching Assistant Award ($1,000)</strong>, San Jose State University (<a href="Certificates.html">certificate</a>) <span class="date-right">2022</span></li>
+        <li><strong>Mentor, Learning Assistant - Reflection, Guidance and Exploration (LA-RGE) Program</strong> (<a href="Certificates.html">certificate</a>) <span class="date-right">2022</span></li>
         <li><strong>IBM Quantum Challenge</strong>, Online Challenge Exam <span class="date-right">2020</span></li>
-        <li><strong>First Position in "Tech-Invent" Competition</strong>, Presentation of Particle Detector (Silicon-Detector) <span class="date-right">2017</span></li>
+        <li><strong>First Position, "Tech-Invent" Competition</strong> &mdash; Presentation of a Silicon Particle Detector <span class="date-right">2017</span></li>
     </ul>
     </section>
 
     <footer id="contact">
-        <p>Contact me at: <a 
-href="mailto:shivam1kamboj@gmail.com">shivam1kamboj@gmail.com</a> or <a href="mailto:skamboj4@ucmerced.edu">skamboj4@ucmerced.edu</a> |
-Connect on <a 
-href="https://www.linkedin.com/in/shivam1kamboj">LinkedIn</a></p>
+        <p>Contact me at: <a href="mailto:shivam1kamboj@gmail.com">shivam1kamboj@gmail.com</a> or <a href="mailto:skamboj4@ucmerced.edu">skamboj4@ucmerced.edu</a> |
+        <a href="https://github.com/shivam1kamboj" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/shivam1kamboj" target="_blank">LinkedIn</a></p>
     </footer>
 </body>
 </html>
