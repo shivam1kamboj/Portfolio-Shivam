@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shivam Kamboj — PhD candidate in quantum computing and computational physics at UC Merced. Superconducting qubit control, quantum process tomography, Hamiltonian simulation, HPC, and quantum error correction. Expected graduation Fall 2026.">
-    <title>Shivam Kamboj — Quantum Computing Researcher</title>
+    <meta name="description" content="Shivam Kamboj — PhD candidate at UC Merced working on Hamiltonian-level device modeling for quantum hardware: circuit and cavity geometry to Hamiltonian to predicted spectrum to measured spectroscopy. Circuit-QED, bosonic and cat-qubit architectures, superconducting qubit control and process tomography, quantum error correction. Expected graduation Fall 2026.">
+    <title>Shivam Kamboj — Hamiltonian-Level Device Modeling for Quantum Hardware</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
         <h1>Shivam Kamboj</h1>
         <p>PhD Candidate, Physics (Quantum Computing) | University of California, Merced | Expected graduation: Fall 2026</p>
+        <p><em>Hamiltonian-level device modeling: circuit geometry &rarr; Hamiltonian &rarr; spectrum &rarr; measurement</em></p>
     </header>
     <nav>
         <ul>
@@ -33,21 +34,30 @@
     </div>
         <h2>About Me</h2>
 <p>I am a PhD candidate in quantum computing and computational physics at UC Merced (advisor: Prof. Lin Tian),
-graduating in Fall 2026. I work at the intersection of theory, experiment, and large-scale computation.
-My expertise is foundational and platform-agnostic: I treat a qubit as a two-level quantum system and a cavity as a
-bosonic mode, so the Hamiltonian-dynamics, open-systems, and quantum-control methods I use transfer directly across
-superconducting, atomic, and photonic hardware.</p>
+graduating in Fall 2026. I work at the layer between circuit design and phenomenological noise models:
+<strong>Hamiltonian-level device modeling</strong>. Given a circuit or cavity design, I derive the Hamiltonian,
+compute the spectrum and normal-mode structure, identify frequency collisions and spurious avoided crossings,
+predict couplings and anharmonicities, and test those predictions against measured spectroscopy.</p>
+
+<p>This matters most for bosonic and cat-qubit architectures, where the protection is not bolted on afterwards
+&mdash; it <em>is</em> the Hamiltonian. My thesis is a worked example: a two-site quantum Rabi system whose
+inter-cavity coupling, tuned in the ultrastrong regime, produces a parity-protected Schr&ouml;dinger-cat ground-state
+doublet with structurally suppressed bit-flip errors, from a static Hamiltonian with no active drives.</p>
 
 <h3>Three core pillars:</h3>
 <ul>
+    <li><strong>Device Modeling &amp; Spectral Prediction:</strong> Hamiltonian derivation, normal-mode and
+        Bogoliubov analysis, avoided-crossing and frequency-collision structure, coupling and anharmonicity
+        prediction &mdash; validated against measured spectra. I am currently extending this upstream into
+        finite-element electromagnetic simulation (COMSOL), so the chain runs from EM geometry to circuit
+        parameters to Hamiltonian to predicted spectrum to measurement.</li>
     <li><strong>Hardware &amp; Control:</strong> Hands-on with real devices. At LLNL I built pulse-level control and
         linear-inversion quantum process tomography (QPT) pipelines to drive and characterize superconducting qudit
         hardware &mdash; operating at the control and measurement layer.</li>
-    <li><strong>Theory &amp; Simulation at Scale:</strong> Rigorous physics modeling. I build large-scale sparse
-        exact-diagonalization and open-quantum-system dynamics pipelines that run on SLURM/HPC clusters (Tian Group).</li>
-    <li><strong>Software &amp; Deployment:</strong> I ship working code people use &mdash; from a full-stack LLM
-        application in production at UC Merced (Google Gemini API, GCP, Flask) to an open-source library for
-        benchmarking quantum error correction under realistic noise (nonmarkov_qec).</li>
+    <li><strong>Simulation at Scale &amp; Software:</strong> Large-scale sparse exact-diagonalization and
+        open-quantum-system pipelines on SLURM/HPC clusters, engineered as maintained software &mdash; plus
+        <code>nonmarkov_qec</code>, an open-source surface-code benchmarking library for correlated
+        non-Markovian noise, and a full-stack LLM application in production at UC Merced.</li>
 </ul>
 
 <p>I started as a theorist &mdash; modeling strongly coupled spin-cavity and cavity-cavity systems, writing custom
@@ -67,6 +77,11 @@ technology genuinely useful.</p>
         <h2>Technical Expertise</h2>
         <div class="skills-grid">
             <ul>
+                <li><strong>Hamiltonian-Level Device Modeling:</strong> Circuit/cavity design &rarr; Hamiltonian
+                    &rarr; spectrum and normal-mode structure; frequency-collision and avoided-crossing analysis;
+                    coupling, anharmonicity, and dispersive-shift prediction checked against measured spectroscopy;
+                    bosonic and cat-qubit encodings as Hamiltonian-design problems; finite-element EM modeling
+                    (COMSOL) for geometry-to-circuit-parameter extraction.</li>
                 <li><strong>Superconducting Qubit Control &amp; Characterization:</strong> Pulse-level control, gate-sequence optimization, quantum process tomography (QPT) via linear inversion with pseudo-inverse reconstruction, T1/T2 and Ramsey characterization.</li>
                 <li><strong>Scientific Computing:</strong> Exact diagonalization, Hamiltonian simulation, open quantum systems, sparse linear algebra, high-performance computing (HPC / SLURM).</li>
                 <li><strong>Quantum Error Correction:</strong> Surface-code simulation, stabilizer methods, correlated (non-Markovian) noise modeling, Stim / PyMatching.</li>
@@ -86,7 +101,8 @@ technology genuinely useful.</p>
             these arrays and show how their ground-state structure supports deterministic Schr&ouml;dinger-cat states
             and parity-protected, noise-biased bosonic qubits. These are the same theoretical structures that underlie
             superconducting transmon-resonator and bosonic-code platforms, so the work connects fundamental
-            light-matter physics directly to the modeling foundations of next-generation quantum hardware. Two
+            light-matter physics directly to the modeling foundations of next-generation quantum hardware. Because the protection here is structural rather than drive-stabilized, designing such a qubit is
+fundamentally a Hamiltonian-design problem &mdash; which is exactly the modeling layer I work at. Two
             first-author manuscripts are in preparation, including a superconducting-circuit realization developed in
             discussion with experimental collaborators.</p>
         </div>
@@ -127,23 +143,32 @@ technology genuinely useful.</p>
     <section id="projects">
         <h2>Key Projects</h2>
 
-        <div class="project">
+       <div class="project">
     <h3>nonmarkov_qec: Benchmarking Quantum Error Correction Under Non-Markovian Noise</h3>
     <h4>Open-source library &mdash; v1 released</h4>
-    <p><strong>The Problem:</strong> Most QEC threshold studies assume Markovian (memoryless) noise, but real
-       devices are dominated by temporally correlated, 1/f-type noise. nonmarkov_qec supplies reproducible,
-       physics-grounded correlated-noise models for stress-testing error-correcting codes against the noise
-       hardware actually exhibits.</p>
+    <p><strong>The Problem:</strong> Most surface-code threshold studies assume Markovian (memoryless) noise, but
+       real devices are dominated by temporally correlated, 1/f-type noise. There was no off-the-shelf, tested
+       pipeline for asking what correlated noise actually does to a code threshold. nonmarkov_qec is that pipeline.</p>
     <ul>
-        <li><strong>Validated noise engine (v1):</strong> An Ornstein&ndash;Uhlenbeck (OU) trajectory sampler and a
-            sum-of-OU approximation to 1/f noise, both numerically validated against their target spectral statistics.</li>
-        <li><strong>Built for QEC pipelines:</strong> Designed to feed correlated-noise trajectories into stabilizer
-            simulation and decoding (Stim / PyMatching) for surface-code threshold studies under non-Markovian noise
-            &mdash; integration and threshold experiments in active development.</li>
+        <li><strong>End-to-end pipeline (v1, complete):</strong> Ornstein&ndash;Uhlenbeck and sum-of-OU generation of
+            correlated 1/f noise &rarr; Z-error injection into Stim &rarr; parameterized rotated surface code
+            (verified at distances d = 3 and d = 5) &rarr; MWPM decoding via PyMatching &rarr; two-layer Monte-Carlo
+            threshold sweep with bootstrap confidence intervals.</li>
+        <li><strong>Result:</strong> Threshold invariance across noise correlation times
+            &tau;<sub>c</sub> = 0.2&ndash;200 cycles, at p<sub>th</sub> &asymp; 3.3 &times; 10<sup>&minus;3</sup>.
+            This is a null result, and deliberately so &mdash; it independently reproduces the non-detrimental
+            regime reported by Kam et al., <em>Quantum Sci. Technol.</em> <strong>10</strong>, 035060 (2025), using
+            a fully independent implementation.</li>
+        <li><strong>Engineered as software, not a script:</strong> 74-test suite, <code>ruff</code> and
+            <code>mypy --strict</code> clean, continuous integration green. The contribution here is reusable
+            tooling and reproducible methodology.</li>
+        <li><strong>Phase 2 (in progress):</strong> pushing into the detrimental regime &mdash; syndrome-qubit and
+            two-qubit-gate noise correlations, a correlation-aware decoder, and calibration against hardware noise
+            spectra.</li>
         <li><strong>Tech Stack:</strong> Python, NumPy/SciPy, Stim, PyMatching.</li>
     </ul>
     <p><a href="https://github.com/shivam1kamboj/nonmarkov_qec" target="_blank">View Repository on GitHub</a></p>
-</div>
+        </div>
 
         <div class="project">
             <h3>High-Performance Algorithm: Sparse Matrix Diagonalization</h3>
