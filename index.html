@@ -145,7 +145,8 @@ fundamentally a Hamiltonian-design problem &mdash; which is exactly the modeling
 
        <div class="project">
     <h3>nonmarkov_qec: Benchmarking Quantum Error Correction Under Non-Markovian Noise</h3>
-    <h4>Open-source library &mdash; v1 released</h4>
+    <h4>Open-source library &mdash; v1 released" &rarr; "Open-source Python package &mdash; released on PyPI</h4>
+    <pre><code>pip install nonmarkov_qec</code></pre>
     <p><strong>The Problem:</strong> Most surface-code threshold studies assume Markovian (memoryless) noise, but
        real devices are dominated by temporally correlated, 1/f-type noise. There was no off-the-shelf, tested
        pipeline for asking what correlated noise actually does to a code threshold. nonmarkov_qec is that pipeline.</p>
@@ -160,8 +161,9 @@ fundamentally a Hamiltonian-design problem &mdash; which is exactly the modeling
             regime reported by Kam et al., <em>Quantum Sci. Technol.</em> <strong>10</strong>, 035060 (2025), using
             a fully independent implementation.</li>
         <li><strong>Engineered as software, not a script:</strong> 74-test suite, <code>ruff</code> and
-            <code>mypy --strict</code> clean, continuous integration green. The contribution here is reusable
-            tooling and reproducible methodology.</li>
+            <code>mypy --strict</code> clean, continuous integration green, and automated tag-triggered
+            PyPI releases via GitHub Actions trusted publishing (OIDC, no stored credentials). The
+            contribution here is reusable tooling and reproducible methodology.</li>
         <li><strong>Phase 2 (in progress):</strong> pushing into the detrimental regime &mdash; syndrome-qubit and
             two-qubit-gate noise correlations, a correlation-aware decoder, and calibration against hardware noise
             spectra.</li>
